@@ -1,0 +1,25 @@
+### list clients
+GET http://localhost:3000/client
+
+### get client
+GET http://localhost:3000/client/dev_55714093-67fc-4f49-a8ce-b783ed30b52
+
+### create client
+POST http://localhost:3000/client
+Content-Type: application/json
+
+{
+    "name": "Diego Biazate",
+    "email": "teste@email.com"
+}
+
+### update client
+PATCH  http://localhost:3000/client/dev_55714093-67fc-4f49-a8ce-b783ed30b528
+Content-Type: application/json
+
+{
+    "name": "Diego Biazate 2"
+}
+
+### delete client
+DELETE http://localhost:3000/client/dev_55714093-67fc-4f49-a8ce-b783ed30b528
